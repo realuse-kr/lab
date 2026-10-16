@@ -1,0 +1,9 @@
+{
+  "_comment": "F-2 가상 파라미터. 시뮬레이션 전용 값이며 실제 기기의 값이 아니다. 플랜트는 F-1과 같은 2차계.",
+  "plant_second_order": {"zeta": 0.32, "wn_rad_s": 11.0},
+  "zeta_sweep_underdamped": [0.05, 0.1, 0.2, 0.32, 0.5, 0.7, 0.8, 0.9, 0.95],
+  "zero_lhp_ratio_to_sigma": [0.5, 1.0, 2.0, 4.0, 8.0],
+  "zero_rhp_ratio_to_sigma": [1.0, 2.0, 4.0],
+  "time_grid_dt_s": 1e-5,
+  "settling_band": 0.02
+}
