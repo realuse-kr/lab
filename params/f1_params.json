@@ -1,0 +1,13 @@
+{
+  "_comment": "F-1 가상 파라미터. 시뮬레이션 전용 값이며 실제 기기의 값이 아니다.",
+  "plant_second_order": {"zeta": 0.32, "wn_rad_s": 11.0},
+  "plant_first_order": {"tau_s": 1.0},
+  "zeta_sweep": [0.1, 0.2, 0.32, 0.5, 0.7071067811865476, 1.0, 1.5, 2.0],
+  "definitions": {
+    "bandwidth": "DC gain 대비 이득이 처음 -3 dB 아래로 내려가는 주파수",
+    "rise_time": "정상값(DC 이득)의 10%에서 90%까지",
+    "settling_time": "응답이 정상값의 ±2% 대역 안에 마지막으로 들어간 시각",
+    "steady_state": "DC 이득(마지막 샘플 아님)"
+  },
+  "time_grid_dt_s": 1e-5
+}
