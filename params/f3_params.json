@@ -1,0 +1,9 @@
+{
+  "_comment": "F-3 가상 파라미터. 시뮬레이션 전용 값이며 실제 기기의 값이 아니다. 플랜트는 F-1·F-2와 같은 2차계.",
+  "plant_second_order": {"zeta": 0.32, "wn_rad_s": 11.0},
+  "t_end_s": 2.0,
+  "sweep_h_s": [0.04, 0.02, 0.01, 0.005, 0.0025, 0.00125, 0.000625],
+  "target_errors": [1e-2, 1e-3, 1e-4, 1e-5],
+  "headline_target": 1e-4,
+  "figure_h_s": 0.04
+}
