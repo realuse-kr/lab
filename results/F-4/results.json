@@ -1,0 +1,339 @@
+{
+ "T_s": 0.02,
+ "poles": [
+  [
+   -4.0,
+   0.0
+  ],
+  [
+   -25.0,
+   0.0
+  ],
+  [
+   -3.0,
+   30.0
+  ],
+  [
+   -3.0,
+   -30.0
+  ],
+  [
+   -10.0,
+   50.0
+  ],
+  [
+   -10.0,
+   -50.0
+  ]
+ ],
+ "methods": {
+  "exact": {
+   "z": [
+    [
+     0.9231163463866358,
+     0.0
+    ],
+    [
+     0.6065306597126334,
+     0.0
+    ],
+    [
+     0.7772718104258823,
+     0.5317602555987321
+    ],
+    [
+     0.7772718104258823,
+     -0.5317602555987321
+    ],
+    [
+     0.4423621137731921,
+     0.6889381730850401
+    ],
+    [
+     0.4423621137731921,
+     -0.6889381730850401
+    ]
+   ],
+   "abs": [
+    0.9231163463866358,
+    0.6065306597126334,
+    0.9417645335842488,
+    0.9417645335842488,
+    0.8187307530779818,
+    0.8187307530779818
+   ],
+   "inside": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "inside_count": 6,
+   "max_abs": 0.9417645335842488,
+   "max_abs_pole_index": 2
+  },
+  "forward_euler": {
+   "z": [
+    [
+     0.92,
+     0.0
+    ],
+    [
+     0.5,
+     0.0
+    ],
+    [
+     0.94,
+     0.6
+    ],
+    [
+     0.94,
+     -0.6
+    ],
+    [
+     0.8,
+     1.0
+    ],
+    [
+     0.8,
+     -1.0
+    ]
+   ],
+   "abs": [
+    0.92,
+    0.5,
+    1.115168148756052,
+    1.115168148756052,
+    1.2806248474865698,
+    1.2806248474865698
+   ],
+   "inside": [
+    true,
+    true,
+    false,
+    false,
+    false,
+    false
+   ],
+   "inside_count": 2,
+   "max_abs": 1.2806248474865698,
+   "max_abs_pole_index": 4
+  },
+  "backward_euler": {
+   "z": [
+    [
+     0.9259259259259258,
+     0.0
+    ],
+    [
+     0.6666666666666666,
+     0.0
+    ],
+    [
+     0.7144782960366676,
+     0.4044216770018873
+    ],
+    [
+     0.7144782960366676,
+     -0.4044216770018873
+    ],
+    [
+     0.49180327868852464,
+     0.40983606557377056
+    ],
+    [
+     0.49180327868852464,
+     -0.40983606557377056
+    ]
+   ],
+   "abs": [
+    0.9259259259259258,
+    0.6666666666666666,
+    0.8209970330862828,
+    0.8209970330862828,
+    0.6401843996644799,
+    0.6401843996644799
+   ],
+   "inside": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "inside_count": 6,
+   "max_abs": 0.9259259259259258,
+   "max_abs_pole_index": 0
+  },
+  "tustin": {
+   "z": [
+    [
+     0.9230769230769229,
+     0.0
+    ],
+    [
+     0.6000000000000001,
+     0.0
+    ],
+    [
+     0.789903553740551,
+     0.521331132157442
+    ],
+    [
+     0.789903553740551,
+     -0.521331132157442
+    ],
+    [
+     0.5068493150684931,
+     0.6849315068493149
+    ],
+    [
+     0.5068493150684931,
+     -0.6849315068493149
+    ]
+   ],
+   "abs": [
+    0.9230769230769229,
+    0.6000000000000001,
+    0.9464321283475703,
+    0.9464321283475703,
+    0.8520724131552867,
+    0.8520724131552867
+   ],
+   "inside": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "inside_count": 6,
+   "max_abs": 0.9464321283475703,
+   "max_abs_pole_index": 2
+  }
+ },
+ "forward_euler_limit": {
+  "per_pole": [
+   0.5,
+   0.08,
+   0.006600660066006601,
+   0.006600660066006601,
+   0.007692307692307693,
+   0.007692307692307693
+  ],
+  "T_max": 0.006600660066006601,
+  "fs_min_hz": 151.5,
+  "limiting_pole_index": 2,
+  "inside_at_0.99x": 6,
+  "inside_at_1.01x": 4
+ },
+ "excluded_from_limit": [],
+ "sweep_table": [
+  {
+   "T": 0.02,
+   "fs_hz": 50.0,
+   "forward_euler_inside": 2,
+   "forward_euler_max_abs": 1.2806248474865698,
+   "backward_euler_inside": 6,
+   "backward_euler_max_abs": 0.9259259259259258,
+   "tustin_inside": 6,
+   "tustin_max_abs": 0.9464321283475703
+  },
+  {
+   "T": 0.01,
+   "fs_hz": 100.0,
+   "forward_euler_inside": 2,
+   "forward_euler_max_abs": 1.0295630140987002,
+   "backward_euler_inside": 6,
+   "backward_euler_max_abs": 0.9615384615384615,
+   "tustin_inside": 6,
+   "tustin_max_abs": 0.971084475368171
+  },
+  {
+   "T": 0.0075,
+   "fs_hz": 133.33333333333334,
+   "forward_euler_inside": 4,
+   "forward_euler_max_abs": 1.003060940322172,
+   "backward_euler_inside": 6,
+   "backward_euler_max_abs": 0.970873786407767,
+   "tustin_inside": 6,
+   "tustin_max_abs": 0.9780253658608729
+  },
+  {
+   "T": 0.005,
+   "fs_hz": 200.0,
+   "forward_euler_inside": 6,
+   "forward_euler_max_abs": 0.9963558601222757,
+   "backward_euler_inside": 6,
+   "backward_euler_max_abs": 0.9803921568627451,
+   "tustin_inside": 6,
+   "tustin_max_abs": 0.9851943290893643
+  },
+  {
+   "T": 0.0025,
+   "fs_hz": 400.0,
+   "forward_euler_inside": 6,
+   "forward_euler_max_abs": 0.995329719238806,
+   "backward_euler_inside": 6,
+   "backward_euler_max_abs": 0.9900990099009901,
+   "tustin_inside": 6,
+   "tustin_max_abs": 0.9925384736426297
+  }
+ ],
+ "wide_sweep": {
+  "T_min": 0.0001,
+  "T_max": 10.0,
+  "points": 501,
+  "backward_euler": {
+   "min_inside": 6,
+   "max_abs_over_sweep": 0.9996955940509087
+  },
+  "tustin": {
+   "min_inside": 6,
+   "max_abs_over_sweep": 0.9997000456680468
+  }
+ },
+ "scipy_check": {
+  "euler": {
+   "max_pole_error": 6.572857864924091e-15
+  },
+  "backward_diff": {
+   "max_pole_error": 5.5289106626332796e-14
+  },
+  "bilinear": {
+   "max_pole_error": 2.6120695383283934e-14
+  },
+  "zoh": {
+   "max_pole_error": 1.354472090042691e-14
+  },
+  "gbt_alpha_0.3": {
+   "max_pole_error": 8.770761894538737e-15
+  }
+ },
+ "region_check": {
+  "samples": 200000,
+  "seed": 0,
+  "forward_euler_re_z_lt_1": true,
+  "backward_euler_in_disc_center_half_radius_half": true,
+  "tustin_in_unit_disc": true,
+  "exact_in_unit_disc": true
+ },
+ "unstable_example": {
+  "s": [
+   120.0,
+   0.0
+  ],
+  "T_s": 0.02,
+  "abs": {
+   "forward_euler": 3.4,
+   "backward_euler": 0.7142857142857143,
+   "tustin": 11.000000000000004
+  },
+  "exact_abs": 11.023176380641601,
+  "backward_euler_inside_if_T_a_gt": 2.0
+ }
+}
