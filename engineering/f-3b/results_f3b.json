@@ -1,0 +1,61 @@
+{
+  "wn": 10.0,
+  "zeta": 0.3,
+  "exact_overshoot_pct": 37.23,
+  "tol_pp": 1.0,
+  "dt_limit_ms": 1.607,
+  "rows": [
+    {
+      "dt_ms": 0.5,
+      "overshoot_pct": 37.54,
+      "error_pp": 0.31,
+      "within_tol": true
+    },
+    {
+      "dt_ms": 1.0,
+      "overshoot_pct": 37.85,
+      "error_pp": 0.62,
+      "within_tol": true
+    },
+    {
+      "dt_ms": 1.5,
+      "overshoot_pct": 38.17,
+      "error_pp": 0.93,
+      "within_tol": true
+    },
+    {
+      "dt_ms": 2.0,
+      "overshoot_pct": 38.48,
+      "error_pp": 1.25,
+      "within_tol": false
+    },
+    {
+      "dt_ms": 5.0,
+      "overshoot_pct": 40.45,
+      "error_pp": 3.21,
+      "within_tol": false
+    },
+    {
+      "dt_ms": 10.0,
+      "overshoot_pct": 43.97,
+      "error_pp": 6.74,
+      "within_tol": false
+    },
+    {
+      "dt_ms": 20.0,
+      "overshoot_pct": 52.23,
+      "error_pp": 15.0,
+      "within_tol": false
+    },
+    {
+      "dt_ms": 40.0,
+      "overshoot_pct": 73.98,
+      "error_pp": 36.74,
+      "within_tol": false
+    }
+  ],
+  "halving_check": {
+    "error_at_1ms": 0.619,
+    "error_at_0p5ms": 0.308
+  }
+}
