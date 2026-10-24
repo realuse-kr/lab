@@ -1,0 +1,72 @@
+{
+  "tau_slow_ms": 10,
+  "tau_fast_ms": 2,
+  "time_ms": 60,
+  "limit_slow_ms": 20,
+  "limit_fast_ms": 4,
+  "step_count_ratio": 5.0,
+  "true_slow_at_60ms": 0.0024787521766663585,
+  "true_fast_at_60ms": 9.357622968840175e-14,
+  "true_fast_at_8ms": 0.01831563888873418,
+  "rows": [
+    {
+      "dt_ms": 1,
+      "m_slow": 0.9,
+      "m_fast": 0.5,
+      "abs_fast": 8.673617379884035e-19,
+      "abs_slow": 0.0017970102999144322
+    },
+    {
+      "dt_ms": 3,
+      "m_slow": 0.7,
+      "m_fast": -0.5,
+      "abs_fast": 9.5367431640625e-07,
+      "abs_slow": 0.0007979226629761201
+    },
+    {
+      "dt_ms": 4,
+      "m_slow": 0.6,
+      "m_fast": -1.0,
+      "abs_fast": 1.0,
+      "abs_slow": 0.00047018498457599973
+    },
+    {
+      "dt_ms": 5,
+      "m_slow": 0.5,
+      "m_fast": -1.5,
+      "abs_fast": 129.746337890625,
+      "abs_slow": 0.000244140625
+    },
+    {
+      "dt_ms": 10,
+      "m_slow": 0.0,
+      "m_fast": -4.0,
+      "abs_fast": 4096.0,
+      "abs_slow": 0.0
+    },
+    {
+      "dt_ms": 15,
+      "m_slow": -0.5,
+      "m_fast": -6.5,
+      "abs_fast": 1785.0625,
+      "abs_slow": 0.0625
+    }
+  ],
+  "edge": [
+    {
+      "dt_ms": 3.9,
+      "steps": 15,
+      "abs_fast": 0.46329123015975227
+    },
+    {
+      "dt_ms": 4.0,
+      "steps": 15,
+      "abs_fast": 1.0
+    },
+    {
+      "dt_ms": 4.1,
+      "steps": 15,
+      "abs_fast": 2.0789281794113577
+    }
+  ]
+}
