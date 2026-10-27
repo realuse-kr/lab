@@ -1,0 +1,133 @@
+{
+  "model": "dx/dt = -x/tau, two independent equations, x(0) = 1, virtual math model",
+  "tau_a_ms": 10,
+  "time_ms": 60,
+  "target_rel_error_a_60ms": 0.01,
+  "rk4_stability_limit_z": 2.7852935634052813,
+  "rk4_stability_limit_b2ms_ms": 5.570587126810563,
+  "euler_stability_limit_b2ms_ms": 4,
+  "rk4_growth_factor_polynomial_max_diff": 2.6645352591003757e-15,
+  "asymptotic_ratio_when_both_stability_limited": 2.872228660241922,
+  "crossover_tau_b_ms": 0.04808418516028724,
+  "crossover_tau_b_ms_by_tolerance": {
+    "0.1": 0.5009700894824447,
+    "0.01": 0.04808418668266908,
+    "0.001": 0.004789176110890215
+  },
+  "steps_accuracy_only_by_tolerance": {
+    "0.1": {
+      "euler": 175,
+      "rk4": 7
+    },
+    "0.01": {
+      "euler": 1795,
+      "rk4": 11
+    },
+    "0.001": {
+      "euler": 17995,
+      "rk4": 18
+    }
+  },
+  "rows": [
+    {
+      "tau_b_ms": 2,
+      "euler": {
+        "steps_accuracy_only": 1795,
+        "steps_stability_only": 16,
+        "steps": 1795,
+        "h_ms": 0.033426183844011144,
+        "calls": 3590,
+        "binding": "accuracy",
+        "a_rel_error": 0.009999922449691539
+      },
+      "rk4": {
+        "steps_accuracy_only": 11,
+        "steps_stability_only": 11,
+        "steps": 11,
+        "h_ms": 5.454545454545454,
+        "calls": 88,
+        "binding": "accuracy",
+        "a_rel_error": 0.007015126389774579
+      },
+      "ratio_rk4_over_euler": 0.024512534818941504
+    },
+    {
+      "tau_b_ms": 0.2,
+      "euler": {
+        "steps_accuracy_only": 1795,
+        "steps_stability_only": 150,
+        "steps": 1795,
+        "h_ms": 0.033426183844011144,
+        "calls": 3590,
+        "binding": "accuracy",
+        "a_rel_error": 0.009999922449691539
+      },
+      "rk4": {
+        "steps_accuracy_only": 11,
+        "steps_stability_only": 108,
+        "steps": 108,
+        "h_ms": 0.5555555555555556,
+        "calls": 864,
+        "binding": "stability",
+        "a_rel_error": 4.988839986808638e-07
+      },
+      "ratio_rk4_over_euler": 0.2406685236768802
+    },
+    {
+      "tau_b_ms": 0.02,
+      "euler": {
+        "steps_accuracy_only": 1795,
+        "steps_stability_only": 1500,
+        "steps": 1795,
+        "h_ms": 0.033426183844011144,
+        "calls": 3590,
+        "binding": "accuracy",
+        "a_rel_error": 0.009999922449691539
+      },
+      "rk4": {
+        "steps_accuracy_only": 11,
+        "steps_stability_only": 1078,
+        "steps": 1078,
+        "h_ms": 0.055658627087198514,
+        "calls": 8624,
+        "binding": "stability",
+        "a_rel_error": 4.8210748658038733e-11
+      },
+      "ratio_rk4_over_euler": 2.4022284122562674
+    },
+    {
+      "tau_b_ms": 0.002,
+      "euler": {
+        "steps_accuracy_only": 1795,
+        "steps_stability_only": 15001,
+        "steps": 15001,
+        "h_ms": 0.003999733351109926,
+        "calls": 30002,
+        "binding": "stability",
+        "a_rel_error": 0.0011995200586721428
+      },
+      "rk4": {
+        "steps_accuracy_only": 11,
+        "steps_stability_only": 10771,
+        "steps": 10771,
+        "h_ms": 0.005570513415653143,
+        "calls": 86168,
+        "binding": "stability",
+        "a_rel_error": 1.7495934973921168e-15
+      },
+      "ratio_rk4_over_euler": 2.872075194987001
+    }
+  ],
+  "rk4_edge_b2ms": [
+    {
+      "h_ms": 5.5,
+      "steps": 15,
+      "b_after_15": 0.4494390875128258
+    },
+    {
+      "h_ms": 5.6,
+      "steps": 15,
+      "b_after_15": 1.3941599808257676
+    }
+  ]
+}
