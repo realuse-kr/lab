@@ -1,0 +1,136 @@
+{
+ "os_cont": 7.9068476370714125,
+ "table": {
+  "0.005": {
+   "Forward Euler": {
+    "os": 9.615488543771121,
+    "maxz": 0.929216007504175
+   },
+   "Backward Euler": {
+    "os": 7.954723087773141,
+    "maxz": 0.9239525277318859
+   },
+   "Tustin": {
+    "os": 8.75580130078919,
+    "maxz": 0.9265880050227667
+   }
+  },
+  "0.01": {
+   "Forward Euler": {
+    "os": 11.697441746983506,
+    "maxz": 0.8675121249259256
+   },
+   "Backward Euler": {
+    "os": 8.07516577401639,
+    "maxz": 0.8452882668698759
+   },
+   "Tustin": {
+    "os": 9.769128651197189,
+    "maxz": 0.8564722823890372
+   }
+  },
+  "0.02": {
+   "Forward Euler": {
+    "os": 17.43877184153162,
+    "maxz": 0.7753758164732505
+   },
+   "Backward Euler": {
+    "os": 8.399450140393515,
+    "maxz": 0.6754200613203205
+   },
+   "Tustin": {
+    "os": 12.441928025969018,
+    "maxz": 0.7271175682121515
+   }
+  },
+  "0.04": {
+   "Forward Euler": {
+    "os": 37.96185916063837,
+    "maxz": 0.7337902046565457
+   },
+   "Backward Euler": {
+    "os": 18.684783427169837,
+    "maxz": 0.4596264608315672
+   },
+   "Tustin": {
+    "os": 21.724606997456377,
+    "maxz": 0.5241222197907722
+   }
+  },
+  "0.05": {
+   "Forward Euler": {
+    "os": 48.32159906594291,
+    "maxz": 0.7788007830714049
+   },
+   "Backward Euler": {
+    "os": 57.387736114946634,
+    "maxz": 0.44138497508977614
+   },
+   "Tustin": {
+    "os": 28.993726134482678,
+    "maxz": 0.461585657733499
+   }
+  }
+ },
+ "checks": {
+  "dlsim_vs_loop_maxdiff": 3.979039320256561e-13,
+  "numerators": {
+   "Forward Euler": [
+    2.0,
+    -1.2
+   ],
+   "Backward Euler": [
+    2.8,
+    -1.9999999999999998
+   ],
+   "Tustin": [
+    2.4,
+    -1.5999999999999999
+   ]
+  },
+  "closed_form_numerators": {
+   "Forward Euler": [
+    2.0,
+    -1.2
+   ],
+   "Backward Euler": [
+    2.8,
+    -2.0
+   ],
+   "Tustin": [
+    2.4,
+    -1.6
+   ]
+  },
+  "small_T_gap_pp": {
+   "Forward Euler": 0.06172950105334252,
+   "Backward Euler": 0.0011048620327080982,
+   "Tustin": 0.031373835717163345
+  },
+  "intersample_maxdiff": 0.0,
+  "all_stable": true,
+  "rank_ok_T<=40ms": true,
+  "T50_flip": true,
+  "first_unstable_T": {
+   "Forward Euler": 0.075,
+   "Backward Euler": 0.064,
+   "Tustin": 0.11
+  },
+  "max_T_error_le_1pp": {
+   "Forward Euler": 0.003,
+   "Backward Euler": 0.023,
+   "Tustin": 0.005
+  },
+  "first_T_backward_above_tustin": 0.042,
+  "first_T_backward_above_forward": 0.048,
+  "backward_error_pp_22_28ms": {
+   "0.022": 0.822,
+   "0.023": 0.674,
+   "0.024": 1.011,
+   "0.025": 1.197,
+   "0.026": 1.177,
+   "0.027": 0.979,
+   "0.028": 1.516
+  }
+ }
+}
