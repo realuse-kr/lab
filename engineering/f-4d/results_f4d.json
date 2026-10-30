@@ -1,0 +1,149 @@
+{
+ "tau_s": 0.1,
+ "env": "Python 3.13, NumPy 2.5.3, SciPy 1.18.1",
+ "T20ms": {
+  "ZOH": {
+   "pole": 0.8187307530779818,
+   "b0": 0.0,
+   "b1": 0.18126924692201818,
+   "max_err_pct": 1.1102230246251565e-14,
+   "max_err_at_ms": 40.0,
+   "err_k0_pct": 0.0,
+   "err_k1_pct": 0.0
+  },
+  "Forward Euler": {
+   "pole": 0.8,
+   "b0": 0.0,
+   "b1": 0.19999999999999996,
+   "max_err_pct": 4.019944117144226,
+   "max_err_at_ms": 100.0,
+   "err_k0_pct": 0.0,
+   "err_k1_pct": 1.8730753077981777
+  },
+  "Backward Euler": {
+   "pole": 0.8333333333333334,
+   "b0": 0.16666666666666663,
+   "b1": 1.1102230246251565e-16,
+   "max_err_pct": 16.666666666666664,
+   "max_err_at_ms": 0.0,
+   "err_k0_pct": 16.666666666666664,
+   "err_k1_pct": 12.42863086335374
+  },
+  "Tustin": {
+   "pole": 0.8181818181818181,
+   "b0": 0.09090909090909094,
+   "b1": 0.09090909090909094,
+   "max_err_pct": 9.090909090909093,
+   "max_err_at_ms": 0.0,
+   "err_k0_pct": 9.090909090909093,
+   "err_k1_pct": 7.492910018541993
+  }
+ },
+ "exp_minus_T_over_tau": 0.8187307530779818,
+ "sweep": [
+  {
+   "T_ms": 5.0,
+   "ZOH": {
+    "pole": 0.951229424500714,
+    "max_err_pct": -2.220446049250313e-14
+   },
+   "Forward Euler": {
+    "pole": 0.95,
+    "max_err_pct": 0.9393518762900399
+   },
+   "Backward Euler": {
+    "pole": 0.9523809523809523,
+    "max_err_pct": 4.761904761904767
+   },
+   "Tustin": {
+    "pole": 0.951219512195122,
+    "max_err_pct": 2.4390243902439046
+   }
+  },
+  {
+   "T_ms": 10.0,
+   "ZOH": {
+    "pole": 0.9048374180359595,
+    "max_err_pct": 3.3306690738754696e-14
+   },
+   "Forward Euler": {
+    "pole": 0.9,
+    "max_err_pct": 1.920100107144218
+   },
+   "Backward Euler": {
+    "pole": 0.9090909090909091,
+    "max_err_pct": 9.090909090909093
+   },
+   "Tustin": {
+    "pole": 0.9047619047619047,
+    "max_err_pct": 4.761904761904767
+   }
+  },
+  {
+   "T_ms": 20.0,
+   "ZOH": {
+    "pole": 0.8187307530779818,
+    "max_err_pct": 1.1102230246251565e-14
+   },
+   "Forward Euler": {
+    "pole": 0.8,
+    "max_err_pct": 4.019944117144226
+   },
+   "Backward Euler": {
+    "pole": 0.8333333333333334,
+    "max_err_pct": 16.666666666666664
+   },
+   "Tustin": {
+    "pole": 0.8181818181818181,
+    "max_err_pct": 9.090909090909093
+   }
+  },
+  {
+   "T_ms": 40.0,
+   "ZOH": {
+    "pole": 0.6703200460356392,
+    "max_err_pct": -4.440892098500626e-14
+   },
+   "Forward Euler": {
+    "pole": 0.6,
+    "max_err_pct": 8.932896411722158
+   },
+   "Backward Euler": {
+    "pole": 0.7142857142857143,
+    "max_err_pct": 28.57142857142858
+   },
+   "Tustin": {
+    "pole": 0.6666666666666667,
+    "max_err_pct": 16.666666666666664
+   }
+  },
+  {
+   "T_ms": 100.0,
+   "ZOH": {
+    "pole": 0.36787944117144233,
+    "max_err_pct": 2.220446049250313e-14
+   },
+   "Forward Euler": {
+    "pole": -0.0,
+    "max_err_pct": 36.787944117144235
+   },
+   "Backward Euler": {
+    "pole": 0.5,
+    "max_err_pct": 50.0
+   },
+   "Tustin": {
+    "pole": 0.3333333333333333,
+    "max_err_pct": 33.33333333333333
+   }
+  }
+ ],
+ "random_held_input_max_abs_diff": 4.04121180963557e-14,
+ "lfilter_vs_recursion_max_abs_diff": 0.0,
+ "tustin_b0_formula": 0.09090909090909091,
+ "backward_b0_formula": 0.16666666666666666,
+ "exercises": {
+  "ex1_tau0.05_zoh_pole_T20ms": 0.6703200460356392,
+  "ex2_forward_pole_T100ms": -0.0,
+  "ex3_backward_b0_T10ms_pct": 9.090909090909093
+ }
+}
