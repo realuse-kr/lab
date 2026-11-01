@@ -1,0 +1,188 @@
+{
+ "params": {
+  "TAU": 0.1,
+  "KP": 2.0,
+  "KI": 40.0,
+  "periods_ms": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "t_end_s": 1.0
+ },
+ "coefficients_T20ms": {
+  "ZOH": {
+   "c0": 2.0,
+   "c1": -1.2,
+   "d1": -1.0
+  },
+  "Forward Euler": {
+   "c0": 2.0,
+   "c1": -1.2,
+   "d1": -1.0
+  },
+  "Backward Euler": {
+   "c0": 2.8,
+   "c1": -2.0,
+   "d1": -1.0
+  },
+  "Tustin": {
+   "c0": 2.4,
+   "c1": -1.6,
+   "d1": -1.0
+  }
+ },
+ "zoh_vs_forward_euler_coeff_max_abs_diff": 0.0,
+ "formula_vs_scipy_coeff_max_abs_diff": 2.220446049250313e-16,
+ "sweep": {
+  "5ms": {
+   "ZOH": {
+    "max_dev_pct": 2.449443320790756,
+    "at_ms": 95.0
+   },
+   "Forward Euler": {
+    "max_dev_pct": 2.449443320790756,
+    "at_ms": 95.0
+   },
+   "Backward Euler": {
+    "max_dev_pct": 3.791538437161668,
+    "at_ms": 45.0
+   },
+   "Tustin": {
+    "max_dev_pct": 2.740222196874187,
+    "at_ms": 60.0
+   }
+  },
+  "10ms": {
+   "ZOH": {
+    "max_dev_pct": 5.173808374595312,
+    "at_ms": 90.0
+   },
+   "Forward Euler": {
+    "max_dev_pct": 5.173808374595312,
+    "at_ms": 90.0
+   },
+   "Backward Euler": {
+    "max_dev_pct": 7.964032719149561,
+    "at_ms": 40.0
+   },
+   "Tustin": {
+    "max_dev_pct": 5.696586738607056,
+    "at_ms": 60.0
+   }
+  },
+  "20ms": {
+   "ZOH": {
+    "max_dev_pct": 11.801360568124974,
+    "at_ms": 100.0
+   },
+   "Forward Euler": {
+    "max_dev_pct": 11.801360568124974,
+    "at_ms": 100.0
+   },
+   "Backward Euler": {
+    "max_dev_pct": 17.95511379989104,
+    "at_ms": 40.0
+   },
+   "Tustin": {
+    "max_dev_pct": 12.411695856809946,
+    "at_ms": 60.0
+   }
+  },
+  "40ms": {
+   "ZOH": {
+    "max_dev_pct": 31.43973124690249,
+    "at_ms": 120.0
+   },
+   "Forward Euler": {
+    "max_dev_pct": 31.43973124690249,
+    "at_ms": 120.0
+   },
+   "Backward Euler": {
+    "max_dev_pct": 55.58906562894408,
+    "at_ms": 40.0
+   },
+   "Tustin": {
+    "max_dev_pct": 29.214669311795227,
+    "at_ms": 40.0
+   }
+  }
+ },
+ "first_sample_dev_pct_T20ms": {
+  "ZOH": 0.4358420596849655,
+  "Forward Euler": 0.4358420596849655,
+  "Backward Euler": 14.937381813446414,
+  "Tustin": 7.68661193656569
+ },
+ "plant_side_T20ms": {
+  "ZOH": {
+   "max_err_pct": 1.1102230246251565e-14
+  },
+  "Forward Euler": {
+   "max_err_pct": 4.019944117144226
+  },
+  "Backward Euler": {
+   "max_err_pct": 16.666666666666664
+  },
+  "Tustin": {
+   "max_err_pct": 9.090909090909093
+  }
+ },
+ "plant_exp_minus_T_over_tau": 0.8187307530779818,
+ "continuous_loop_T20ms": {
+  "error_at_0_ms": 1.0,
+  "error_at_20_ms": 0.6418199267528191,
+  "y_max": 1.0784521085165744
+ },
+ "loop_vs_hybrid_ode_max_abs_diff": 6.661338147750939e-16,
+ "continuous_ref_vs_ode_max_abs_diff": 3.6068925624022086e-12,
+ "exercise_answers": {
+  "1_T10ms": {
+   "ZOH": {
+    "max_dev_pct": 5.173808374595312,
+    "at_ms": 90.0
+   },
+   "Forward Euler": {
+    "max_dev_pct": 5.173808374595312,
+    "at_ms": 90.0
+   },
+   "Backward Euler": {
+    "max_dev_pct": 7.964032719149561,
+    "at_ms": 40.0
+   },
+   "Tustin": {
+    "max_dev_pct": 5.696586738607056,
+    "at_ms": 60.0
+   }
+  },
+  "2_KI20_T20ms": {
+   "ZOH": {
+    "c1": -1.6,
+    "max_dev_pct": 5.664256760128672,
+    "at_ms": 80.0
+   },
+   "Forward Euler": {
+    "c1": -1.6,
+    "max_dev_pct": 5.664256760128672,
+    "at_ms": 80.0
+   },
+   "Backward Euler": {
+    "c1": -2.0,
+    "max_dev_pct": 12.380336269358239,
+    "at_ms": 40.0
+   },
+   "Tustin": {
+    "c1": -1.8,
+    "max_dev_pct": 8.809722859001191,
+    "at_ms": 40.0
+   }
+  },
+  "3_formula": {
+   "ZOH_and_Forward_Euler": "c0=KP, c1=-KP+KI*T",
+   "Backward Euler": "c0=KP+KI*T, c1=-KP",
+   "Tustin": "c0=KP+KI*T/2, c1=-KP+KI*T/2",
+   "d1": -1.0
+  }
+ }
+}
