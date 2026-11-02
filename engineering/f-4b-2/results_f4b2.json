@@ -1,0 +1,267 @@
+{
+ "fb_hz": 4.7254,
+ "ratios": [
+  4,
+  5,
+  6,
+  8,
+  10,
+  13,
+  16,
+  20,
+  26,
+  32,
+  40,
+  52,
+  64,
+  80,
+  104,
+  128,
+  160
+ ],
+ "sweep": [
+  {
+   "ratio": 4,
+   "T_ms": 52.906,
+   "max_gap": 0.86943,
+   "pole_modulus": {
+    "Forward Euler": 0.7981,
+    "Backward Euler": 0.5359,
+    "Tustin": 0.4497
+   }
+  },
+  {
+   "ratio": 5,
+   "T_ms": 42.325,
+   "max_gap": 0.58422,
+   "pole_modulus": {
+    "Forward Euler": 0.7409,
+    "Backward Euler": 0.4576,
+    "Tustin": 0.5068
+   }
+  },
+  {
+   "ratio": 6,
+   "T_ms": 35.27,
+   "max_gap": 0.41932,
+   "pole_modulus": {
+    "Forward Euler": 0.7264,
+    "Backward Euler": 0.4462,
+    "Tustin": 0.5639
+   }
+  },
+  {
+   "ratio": 8,
+   "T_ms": 26.453,
+   "max_gap": 0.24594,
+   "pole_modulus": {
+    "Forward Euler": 0.7407,
+    "Backward Euler": 0.5502,
+    "Tustin": 0.6524
+   }
+  },
+  {
+   "ratio": 10,
+   "T_ms": 21.162,
+   "max_gap": 0.16145,
+   "pole_modulus": {
+    "Forward Euler": 0.7676,
+    "Backward Euler": 0.6541,
+    "Tustin": 0.7131
+   }
+  },
+  {
+   "ratio": 13,
+   "T_ms": 16.279,
+   "max_gap": 0.1126,
+   "pole_modulus": {
+    "Forward Euler": 0.8044,
+    "Backward Euler": 0.7412,
+    "Tustin": 0.7735
+   }
+  },
+  {
+   "ratio": 16,
+   "T_ms": 13.226,
+   "max_gap": 0.08619,
+   "pole_modulus": {
+    "Forward Euler": 0.833,
+    "Backward Euler": 0.7927,
+    "Tustin": 0.8131
+   }
+  },
+  {
+   "ratio": 20,
+   "T_ms": 10.581,
+   "max_gap": 0.06498,
+   "pole_modulus": {
+    "Forward Euler": 0.861,
+    "Backward Euler": 0.8359,
+    "Tustin": 0.8485
+   }
+  },
+  {
+   "ratio": 26,
+   "T_ms": 8.139,
+   "max_gap": 0.04748,
+   "pole_modulus": {
+    "Forward Euler": 0.8893,
+    "Backward Euler": 0.8749,
+    "Tustin": 0.8822
+   }
+  },
+  {
+   "ratio": 32,
+   "T_ms": 6.613,
+   "max_gap": 0.03752,
+   "pole_modulus": {
+    "Forward Euler": 0.9083,
+    "Backward Euler": 0.8989,
+    "Tustin": 0.9036
+   }
+  },
+  {
+   "ratio": 40,
+   "T_ms": 5.291,
+   "max_gap": 0.0294,
+   "pole_modulus": {
+    "Forward Euler": 0.9254,
+    "Backward Euler": 0.9195,
+    "Tustin": 0.9224
+   }
+  },
+  {
+   "ratio": 52,
+   "T_ms": 4.07,
+   "max_gap": 0.02218,
+   "pole_modulus": {
+    "Forward Euler": 0.9417,
+    "Backward Euler": 0.9383,
+    "Tustin": 0.94
+   }
+  },
+  {
+   "ratio": 64,
+   "T_ms": 3.307,
+   "max_gap": 0.01781,
+   "pole_modulus": {
+    "Forward Euler": 0.9522,
+    "Backward Euler": 0.95,
+    "Tustin": 0.9511
+   }
+  },
+  {
+   "ratio": 80,
+   "T_ms": 2.645,
+   "max_gap": 0.01408,
+   "pole_modulus": {
+    "Forward Euler": 0.9615,
+    "Backward Euler": 0.96,
+    "Tustin": 0.9608
+   }
+  },
+  {
+   "ratio": 104,
+   "T_ms": 2.035,
+   "max_gap": 0.01073,
+   "pole_modulus": {
+    "Forward Euler": 0.9702,
+    "Backward Euler": 0.9693,
+    "Tustin": 0.9697
+   }
+  },
+  {
+   "ratio": 128,
+   "T_ms": 1.653,
+   "max_gap": 0.00866,
+   "pole_modulus": {
+    "Forward Euler": 0.9757,
+    "Backward Euler": 0.9751,
+    "Tustin": 0.9754
+   }
+  },
+  {
+   "ratio": 160,
+   "T_ms": 1.323,
+   "max_gap": 0.00689,
+   "pole_modulus": {
+    "Forward Euler": 0.9804,
+    "Backward Euler": 0.9801,
+    "Tustin": 0.9803
+   }
+  }
+ ],
+ "gap_ratio_per_doubling_r5_to_160": {
+  "5->10": 3.6185,
+  "10->20": 2.4846,
+  "20->40": 2.2099,
+  "40->80": 2.0879,
+  "80->160": 2.043
+ },
+ "gap_levels": {
+  "0.05": {
+   "ratio": 24.82,
+   "T_ms": 8.53
+  },
+  "0.02": {
+   "ratio": 57.37,
+   "T_ms": 3.69
+  },
+  "0.01": {
+   "ratio": 111.33,
+   "T_ms": 1.9
+  }
+ },
+ "first_unstable_ratio_scan_step_0.01": {
+  "Forward Euler": 2.82,
+  "Backward Euler": 3.34,
+  "Tustin": 1.92
+ },
+ "mixed_verdict_ratio_range": [
+  1.93,
+  3.34
+ ],
+ "verdict_samples": {
+  "4.0": {
+   "Forward Euler": "안정",
+   "Backward Euler": "안정",
+   "Tustin": "안정"
+  },
+  "3.5": {
+   "Forward Euler": "안정",
+   "Backward Euler": "안정",
+   "Tustin": "안정"
+  },
+  "3.0": {
+   "Forward Euler": "안정",
+   "Backward Euler": "불안정",
+   "Tustin": "안정"
+  },
+  "2.5": {
+   "Forward Euler": "불안정",
+   "Backward Euler": "불안정",
+   "Tustin": "안정"
+  },
+  "2.0": {
+   "Forward Euler": "불안정",
+   "Backward Euler": "불안정",
+   "Tustin": "안정"
+  },
+  "1.5": {
+   "Forward Euler": "불안정",
+   "Backward Euler": "불안정",
+   "Tustin": "불안정"
+  }
+ },
+ "exercises": {
+  "ex1_T20ms": {
+   "ratio": 10.581,
+   "max_gap": 0.14502
+  },
+  "ex2_KI20": {
+   "fb_hz": 3.1831,
+   "ratio20_max_gap": 0.05606
+  },
+  "ex3_gap_40_over_80": 2.0879
+ }
+}
