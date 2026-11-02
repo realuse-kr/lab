@@ -1,0 +1,465 @@
+{
+ "fb_hz": 4.7254,
+ "continuous_overshoot_pct": 7.907,
+ "ratios": [
+  4,
+  5,
+  6,
+  8,
+  10,
+  13,
+  16,
+  20,
+  26,
+  32,
+  40,
+  52,
+  64,
+  80,
+  104,
+  128,
+  160
+ ],
+ "sweep": [
+  {
+   "ratio": 4,
+   "T_ms": 52.906,
+   "continuous_overshoot_pct": 7.907,
+   "rules": {
+    "Forward Euler": {
+     "overshoot_pct": 50.005,
+     "max_dev": 0.4587,
+     "max_pole_modulus": 0.7981
+    },
+    "Backward Euler": {
+     "overshoot_pct": 69.111,
+     "max_dev": 0.92693,
+     "max_pole_modulus": 0.5359
+    },
+    "Tustin": {
+     "overshoot_pct": 28.752,
+     "max_dev": 0.49221,
+     "max_pole_modulus": 0.4497
+    }
+   }
+  },
+  {
+   "ratio": 5,
+   "T_ms": 42.325,
+   "continuous_overshoot_pct": 7.907,
+   "rules": {
+    "Forward Euler": {
+     "overshoot_pct": 41.133,
+     "max_dev": 0.33921,
+     "max_pole_modulus": 0.7409
+    },
+    "Backward Euler": {
+     "overshoot_pct": 27.438,
+     "max_dev": 0.61707,
+     "max_pole_modulus": 0.4576
+    },
+    "Tustin": {
+     "overshoot_pct": 24.494,
+     "max_dev": 0.32496,
+     "max_pole_modulus": 0.5068
+    }
+   }
+  },
+  {
+   "ratio": 6,
+   "T_ms": 35.27,
+   "continuous_overshoot_pct": 7.907,
+   "rules": {
+    "Forward Euler": {
+     "overshoot_pct": 30.063,
+     "max_dev": 0.25927,
+     "max_pole_modulus": 0.7264
+    },
+    "Backward Euler": {
+     "overshoot_pct": 11.783,
+     "max_dev": 0.43976,
+     "max_pole_modulus": 0.4462
+    },
+    "Tustin": {
+     "overshoot_pct": 18.987,
+     "max_dev": 0.24316,
+     "max_pole_modulus": 0.5639
+    }
+   }
+  },
+  {
+   "ratio": 8,
+   "T_ms": 26.453,
+   "continuous_overshoot_pct": 7.907,
+   "rules": {
+    "Forward Euler": {
+     "overshoot_pct": 22.116,
+     "max_dev": 0.1706,
+     "max_pole_modulus": 0.7407
+    },
+    "Backward Euler": {
+     "overshoot_pct": 9.014,
+     "max_dev": 0.25538,
+     "max_pole_modulus": 0.5502
+    },
+    "Tustin": {
+     "overshoot_pct": 14.846,
+     "max_dev": 0.17525,
+     "max_pole_modulus": 0.6524
+    }
+   }
+  },
+  {
+   "ratio": 10,
+   "T_ms": 21.162,
+   "continuous_overshoot_pct": 7.907,
+   "rules": {
+    "Forward Euler": {
+     "overshoot_pct": 18.328,
+     "max_dev": 0.12598,
+     "max_pole_modulus": 0.7676
+    },
+    "Backward Euler": {
+     "overshoot_pct": 8.687,
+     "max_dev": 0.19166,
+     "max_pole_modulus": 0.6541
+    },
+    "Tustin": {
+     "overshoot_pct": 12.521,
+     "max_dev": 0.1316,
+     "max_pole_modulus": 0.7131
+    }
+   }
+  },
+  {
+   "ratio": 13,
+   "T_ms": 16.279,
+   "continuous_overshoot_pct": 7.907,
+   "rules": {
+    "Forward Euler": {
+     "overshoot_pct": 15.06,
+     "max_dev": 0.09144,
+     "max_pole_modulus": 0.8044
+    },
+    "Backward Euler": {
+     "overshoot_pct": 8.309,
+     "max_dev": 0.13668,
+     "max_pole_modulus": 0.7412
+    },
+    "Tustin": {
+     "overshoot_pct": 11.188,
+     "max_dev": 0.09653,
+     "max_pole_modulus": 0.7735
+    }
+   }
+  },
+  {
+   "ratio": 16,
+   "T_ms": 13.226,
+   "continuous_overshoot_pct": 7.907,
+   "rules": {
+    "Forward Euler": {
+     "overshoot_pct": 13.33,
+     "max_dev": 0.07132,
+     "max_pole_modulus": 0.833
+    },
+    "Backward Euler": {
+     "overshoot_pct": 8.145,
+     "max_dev": 0.1091,
+     "max_pole_modulus": 0.7927
+    },
+    "Tustin": {
+     "overshoot_pct": 10.463,
+     "max_dev": 0.07721,
+     "max_pole_modulus": 0.8131
+    }
+   }
+  },
+  {
+   "ratio": 20,
+   "T_ms": 10.581,
+   "continuous_overshoot_pct": 7.907,
+   "rules": {
+    "Forward Euler": {
+     "overshoot_pct": 11.943,
+     "max_dev": 0.05534,
+     "max_pole_modulus": 0.861
+    },
+    "Backward Euler": {
+     "overshoot_pct": 8.088,
+     "max_dev": 0.08476,
+     "max_pole_modulus": 0.8359
+    },
+    "Tustin": {
+     "overshoot_pct": 9.874,
+     "max_dev": 0.06038,
+     "max_pole_modulus": 0.8485
+    }
+   }
+  },
+  {
+   "ratio": 26,
+   "T_ms": 8.139,
+   "continuous_overshoot_pct": 7.907,
+   "rules": {
+    "Forward Euler": {
+     "overshoot_pct": 10.87,
+     "max_dev": 0.04127,
+     "max_pole_modulus": 0.8893
+    },
+    "Backward Euler": {
+     "overshoot_pct": 8.01,
+     "max_dev": 0.06364,
+     "max_pole_modulus": 0.8749
+    },
+    "Tustin": {
+     "overshoot_pct": 9.342,
+     "max_dev": 0.04574,
+     "max_pole_modulus": 0.8822
+    }
+   }
+  },
+  {
+   "ratio": 32,
+   "T_ms": 6.613,
+   "continuous_overshoot_pct": 7.907,
+   "rules": {
+    "Forward Euler": {
+     "overshoot_pct": 10.244,
+     "max_dev": 0.03301,
+     "max_pole_modulus": 0.9083
+    },
+    "Backward Euler": {
+     "overshoot_pct": 7.971,
+     "max_dev": 0.05088,
+     "max_pole_modulus": 0.8989
+    },
+    "Tustin": {
+     "overshoot_pct": 9.055,
+     "max_dev": 0.0367,
+     "max_pole_modulus": 0.9036
+    }
+   }
+  },
+  {
+   "ratio": 40,
+   "T_ms": 5.291,
+   "continuous_overshoot_pct": 7.907,
+   "rules": {
+    "Forward Euler": {
+     "overshoot_pct": 9.724,
+     "max_dev": 0.026,
+     "max_pole_modulus": 0.9254
+    },
+    "Backward Euler": {
+     "overshoot_pct": 7.965,
+     "max_dev": 0.0403,
+     "max_pole_modulus": 0.9195
+    },
+    "Tustin": {
+     "overshoot_pct": 8.812,
+     "max_dev": 0.02908,
+     "max_pole_modulus": 0.9224
+    }
+   }
+  },
+  {
+   "ratio": 52,
+   "T_ms": 4.07,
+   "continuous_overshoot_pct": 7.907,
+   "rules": {
+    "Forward Euler": {
+     "overshoot_pct": 9.263,
+     "max_dev": 0.01974,
+     "max_pole_modulus": 0.9417
+    },
+    "Backward Euler": {
+     "overshoot_pct": 7.943,
+     "max_dev": 0.03063,
+     "max_pole_modulus": 0.9383
+    },
+    "Tustin": {
+     "overshoot_pct": 8.584,
+     "max_dev": 0.02216,
+     "max_pole_modulus": 0.94
+    }
+   }
+  },
+  {
+   "ratio": 64,
+   "T_ms": 3.307,
+   "continuous_overshoot_pct": 7.907,
+   "rules": {
+    "Forward Euler": {
+     "overshoot_pct": 8.996,
+     "max_dev": 0.01591,
+     "max_pole_modulus": 0.9522
+    },
+    "Backward Euler": {
+     "overshoot_pct": 7.933,
+     "max_dev": 0.02476,
+     "max_pole_modulus": 0.95
+    },
+    "Tustin": {
+     "overshoot_pct": 8.452,
+     "max_dev": 0.0179,
+     "max_pole_modulus": 0.9511
+    }
+   }
+  },
+  {
+   "ratio": 80,
+   "T_ms": 2.645,
+   "continuous_overshoot_pct": 7.907,
+   "rules": {
+    "Forward Euler": {
+     "overshoot_pct": 8.766,
+     "max_dev": 0.01263,
+     "max_pole_modulus": 0.9615
+    },
+    "Backward Euler": {
+     "overshoot_pct": 7.927,
+     "max_dev": 0.0197,
+     "max_pole_modulus": 0.96
+    },
+    "Tustin": {
+     "overshoot_pct": 8.339,
+     "max_dev": 0.01426,
+     "max_pole_modulus": 0.9608
+    }
+   }
+  },
+  {
+   "ratio": 104,
+   "T_ms": 2.035,
+   "continuous_overshoot_pct": 7.907,
+   "rules": {
+    "Forward Euler": {
+     "overshoot_pct": 8.559,
+     "max_dev": 0.00965,
+     "max_pole_modulus": 0.9702
+    },
+    "Backward Euler": {
+     "overshoot_pct": 7.921,
+     "max_dev": 0.01508,
+     "max_pole_modulus": 0.9693
+    },
+    "Tustin": {
+     "overshoot_pct": 8.235,
+     "max_dev": 0.01092,
+     "max_pole_modulus": 0.9697
+    }
+   }
+  },
+  {
+   "ratio": 128,
+   "T_ms": 1.653,
+   "continuous_overshoot_pct": 7.907,
+   "rules": {
+    "Forward Euler": {
+     "overshoot_pct": 8.433,
+     "max_dev": 0.00781,
+     "max_pole_modulus": 0.9757
+    },
+    "Backward Euler": {
+     "overshoot_pct": 7.918,
+     "max_dev": 0.01221,
+     "max_pole_modulus": 0.9751
+    },
+    "Tustin": {
+     "overshoot_pct": 8.173,
+     "max_dev": 0.00885,
+     "max_pole_modulus": 0.9754
+    }
+   }
+  },
+  {
+   "ratio": 160,
+   "T_ms": 1.323,
+   "continuous_overshoot_pct": 7.907,
+   "rules": {
+    "Forward Euler": {
+     "overshoot_pct": 8.325,
+     "max_dev": 0.00623,
+     "max_pole_modulus": 0.9804
+    },
+    "Backward Euler": {
+     "overshoot_pct": 7.916,
+     "max_dev": 0.00974,
+     "max_pole_modulus": 0.9801
+    },
+    "Tustin": {
+     "overshoot_pct": 8.118,
+     "max_dev": 0.00706,
+     "max_pole_modulus": 0.9803
+    }
+   }
+  }
+ ],
+ "T20ms": {
+  "ratio": 10.581,
+  "Forward Euler": {
+   "overshoot_pct": 17.439,
+   "max_dev": 0.11801
+  },
+  "Backward Euler": {
+   "overshoot_pct": 8.399,
+   "max_dev": 0.17955
+  },
+  "Tustin": {
+   "overshoot_pct": 12.442,
+   "max_dev": 0.12412
+  }
+ },
+ "first_unstable_ratio_scan_step_0.01": {
+  "Forward Euler": 2.82,
+  "Backward Euler": 3.34,
+  "Tustin": 1.92
+ },
+ "deviation_ratio_per_doubling_r5_to_160": {
+  "Forward Euler": [
+   2.693,
+   2.276,
+   2.129,
+   2.058,
+   2.029
+  ],
+  "Backward Euler": [
+   3.22,
+   2.261,
+   2.103,
+   2.046,
+   2.021
+  ],
+  "Tustin": [
+   2.469,
+   2.18,
+   2.076,
+   2.04,
+   2.019
+  ]
+ },
+ "exercises": {
+  "ex1_T20ms": {
+   "ratio": 10.581,
+   "Forward Euler": {
+    "overshoot_pct": 17.439,
+    "max_dev": 0.11801
+   },
+   "Backward Euler": {
+    "overshoot_pct": 8.399,
+    "max_dev": 0.17955
+   },
+   "Tustin": {
+    "overshoot_pct": 12.442,
+    "max_dev": 0.12412
+   }
+  },
+  "ex2_KI20": {
+   "fb_hz": 3.1831,
+   "continuous_overshoot_pct": 0.0,
+   "ratio20_forward_euler_max_dev": 0.04328
+  },
+  "ex3_forward_euler_dev_40_over_80": 2.058
+ }
+}
