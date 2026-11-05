@@ -1,0 +1,199 @@
+{
+ "fb_hz": 4.7253,
+ "wc_rad_s": 24.025,
+ "T20_ms": 20.0,
+ "m_at_T20": 10.581,
+ "coef_T20": {
+  "스텝 불변": [
+   2.0,
+   -1.2
+  ],
+  "Forward Euler": [
+   2.0,
+   -1.2
+  ],
+  "Backward Euler": [
+   2.8,
+   -2.0
+  ],
+  "Tustin": [
+   2.4,
+   -1.6
+  ]
+ },
+ "controller_T20": {
+  "스텝 불변": {
+   "step_diff_min": -0.0,
+   "step_diff_max": 0.0,
+   "ramp_diff_at_2s": -0.8,
+   "ramp_diff_over_t_per_s": -0.4
+  },
+  "Forward Euler": {
+   "step_diff_min": -0.0,
+   "step_diff_max": 0.0,
+   "ramp_diff_at_2s": -0.8,
+   "ramp_diff_over_t_per_s": -0.4
+  },
+  "Backward Euler": {
+   "step_diff_min": 0.8,
+   "step_diff_max": 0.8,
+   "ramp_diff_at_2s": 0.8,
+   "ramp_diff_over_t_per_s": 0.4
+  },
+  "Tustin": {
+   "step_diff_min": 0.4,
+   "step_diff_max": 0.4,
+   "ramp_diff_at_2s": 0.0,
+   "ramp_diff_over_t_per_s": 0.0
+  }
+ },
+ "freq_at_wc_T20": {
+  "스텝 불변": {
+   "gain_ratio": 0.8785,
+   "phase_diff_deg": -5.8
+  },
+  "Forward Euler": {
+   "gain_ratio": 0.8785,
+   "phase_diff_deg": -5.8
+  },
+  "Backward Euler": {
+   "gain_ratio": 1.1155,
+   "phase_diff_deg": 5.55
+  },
+  "Tustin": {
+   "gain_ratio": 0.9921,
+   "phase_diff_deg": 0.55
+  }
+ },
+ "analytic_T20": {
+  "ramp_slope_step_invariant": -0.4,
+  "step_offset_backward": 0.8,
+  "step_offset_tustin": 0.4,
+  "ramp_slope_backward": 0.4,
+  "ramp_slope_tustin": 0.0
+ },
+ "si_equals_forward_euler_max_coef_diff": 0.0,
+ "held_random_input_max_diff": {
+  "스텝 불변": 6.217248937900877e-15,
+  "Forward Euler": 6.217248937900877e-15,
+  "Backward Euler": 0.7956183997277633,
+  "Tustin": 0.3978091998638813
+ },
+ "multiples": [
+  6,
+  8,
+  10,
+  20,
+  25,
+  30,
+  40,
+  100
+ ],
+ "sweep": [
+  {
+   "m": 6,
+   "T_ms": 35.27,
+   "deviation": {
+    "스텝 불변": 0.2593,
+    "Forward Euler": 0.2593,
+    "Backward Euler": 0.4398,
+    "Tustin": 0.2432
+   }
+  },
+  {
+   "m": 8,
+   "T_ms": 26.45,
+   "deviation": {
+    "스텝 불변": 0.1706,
+    "Forward Euler": 0.1706,
+    "Backward Euler": 0.2554,
+    "Tustin": 0.1752
+   }
+  },
+  {
+   "m": 10,
+   "T_ms": 21.16,
+   "deviation": {
+    "스텝 불변": 0.126,
+    "Forward Euler": 0.126,
+    "Backward Euler": 0.1917,
+    "Tustin": 0.1316
+   }
+  },
+  {
+   "m": 20,
+   "T_ms": 10.58,
+   "deviation": {
+    "스텝 불변": 0.0553,
+    "Forward Euler": 0.0553,
+    "Backward Euler": 0.0848,
+    "Tustin": 0.0604
+   }
+  },
+  {
+   "m": 25,
+   "T_ms": 8.46,
+   "deviation": {
+    "스텝 불변": 0.0432,
+    "Forward Euler": 0.0432,
+    "Backward Euler": 0.0664,
+    "Tustin": 0.0477
+   }
+  },
+  {
+   "m": 30,
+   "T_ms": 7.05,
+   "deviation": {
+    "스텝 불변": 0.0354,
+    "Forward Euler": 0.0354,
+    "Backward Euler": 0.0546,
+    "Tustin": 0.0393
+   }
+  },
+  {
+   "m": 40,
+   "T_ms": 5.29,
+   "deviation": {
+    "스텝 불변": 0.026,
+    "Forward Euler": 0.026,
+    "Backward Euler": 0.0403,
+    "Tustin": 0.0291
+   }
+  },
+  {
+   "m": 100,
+   "T_ms": 2.12,
+   "deviation": {
+    "스텝 불변": 0.01,
+    "Forward Euler": 0.01,
+    "Backward Euler": 0.0157,
+    "Tustin": 0.0114
+   }
+  }
+ ],
+ "exercises": {
+  "ex1_T10ms": {
+   "스텝 불변": {
+    "ramp_diff_at_2s": -0.4
+   },
+   "Forward Euler": {
+    "ramp_diff_at_2s": -0.4
+   },
+   "Backward Euler": {
+    "ramp_diff_at_2s": 0.4
+   },
+   "Tustin": {
+    "ramp_diff_at_2s": 0.0
+   }
+  },
+  "ex3_T2p5ms": {
+   "ramp_diff_at_2s": -0.1
+  },
+  "ex2_KI20_T20ms": {
+   "coef": [
+    2.0,
+    -1.6
+   ]
+  }
+ }
+}
