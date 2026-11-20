@@ -1,0 +1,148 @@
+{
+  "T_s": 0.02,
+  "plant": {
+    "tau_s": 0.1,
+    "alpha": 0.8187307530779818
+  },
+  "continuous_closed_loop_poles_rad_per_s": [
+    [
+      -14.999999999999998,
+      13.228756555322953
+    ],
+    [
+      -14.999999999999998,
+      -13.228756555322953
+    ]
+  ],
+  "target_poles_z": [
+    [
+      0.7150404808678152,
+      0.1937233770466279
+    ],
+    [
+      0.7150404808678152,
+      -0.1937233770466279
+    ]
+  ],
+  "target_abs_z": 0.7408182206817179,
+  "rows": {
+    "Forward Euler": {
+      "c0": 2.0,
+      "c1": -1.2,
+      "zero_z": 0.6,
+      "low_freq_integral_gain": 40.0,
+      "closed_loop_pole_z": [
+        0.7280961296169726,
+        0.2666152336389364
+      ],
+      "closed_loop_pole_abs": 0.7753758164732506,
+      "distance_to_target": 0.07405182456722482,
+      "closed_loop_deviation": 0.1180136056812473
+    },
+    "Backward Euler": {
+      "c0": 2.8,
+      "c1": -2.0,
+      "zero_z": 0.7142857142857143,
+      "low_freq_integral_gain": 39.99999999999999,
+      "closed_loop_pole_z": [
+        0.6555884308481654,
+        0.16246866950887984
+      ],
+      "closed_loop_pole_abs": 0.6754200613203204,
+      "distance_to_target": 0.06716697845525813,
+      "closed_loop_deviation": 0.17955113799890476
+    },
+    "Tustin": {
+      "c0": 2.4,
+      "c1": -1.6,
+      "zero_z": 0.6666666666666667,
+      "low_freq_integral_gain": 39.99999999999999,
+      "closed_loop_pole_z": [
+        0.691842280232569,
+        0.22372799843862212
+      ],
+      "closed_loop_pole_abs": 0.7271175682121513,
+      "distance_to_target": 0.03792669004263431,
+      "closed_loop_deviation": 0.12411695856808957
+    },
+    "스텝 불변": {
+      "c0": 2.0,
+      "c1": -1.2,
+      "zero_z": 0.6,
+      "low_freq_integral_gain": 40.0,
+      "closed_loop_pole_z": [
+        0.7280961296169726,
+        0.2666152336389364
+      ],
+      "closed_loop_pole_abs": 0.7753758164732506,
+      "distance_to_target": 0.07405182456722482,
+      "closed_loop_deviation": 0.1180136056812473
+    },
+    "극·영점 매칭": {
+      "c0": 2.4265958253757893,
+      "c1": -1.6265958253757893,
+      "zero_z": 0.6703200460356393,
+      "low_freq_integral_gain": 40.0,
+      "closed_loop_pole_z": [
+        0.6894317776139998,
+        0.22036963670527385
+      ],
+      "closed_loop_pole_abs": 0.7237948278107643,
+      "distance_to_target": 0.03695712158891656,
+      "closed_loop_deviation": 0.12636152462873496
+    },
+    "프리워핑 Tustin": {
+      "c0": 2.407861171190775,
+      "c1": -1.592138828809225,
+      "zero_z": 0.6612253429967703,
+      "low_freq_integral_gain": 40.78611711907749,
+      "closed_loop_pole_z": [
+        0.6911297859417307,
+        0.22905144742735675
+      ],
+      "closed_loop_pole_abs": 0.7280967975375456,
+      "distance_to_target": 0.04265904228500702,
+      "closed_loop_deviation": 0.1303322752161945
+    },
+    "직접 이산 설계": {
+      "c0": 2.144047034682877,
+      "c1": -1.4890507991136208,
+      "zero_z": 0.6945047263545057,
+      "low_freq_integral_gain": 32.74981177846281,
+      "closed_loop_pole_z": [
+        0.7150404808678152,
+        0.19372337704662806
+      ],
+      "closed_loop_pole_abs": 0.7408182206817179,
+      "distance_to_target": 1.6653345369377348e-16,
+      "closed_loop_deviation": 0.04559244617380942
+    }
+  },
+  "check_coefficients_match": true,
+  "check_eigenvalues_match": true,
+  "zoh_equivalent_closed_loop": {
+    "numerator": [
+      0.35818007324718115,
+      -0.23944939888878541
+    ],
+    "denominator": [
+      1.0,
+      -1.430080961735631,
+      0.5488116360940267
+    ],
+    "zero_z": 0.6685168069736271
+  },
+  "direct_closed_loop": {
+    "numerator": [
+      0.38864979134235134,
+      -0.26991911698395543
+    ],
+    "denominator": [
+      1.0,
+      -1.4300809617356305,
+      0.5488116360940264
+    ],
+    "zero_z": 0.6945047263545057
+  },
+  "denominators_match": true
+}
