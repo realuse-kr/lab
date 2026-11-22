@@ -1,0 +1,1 @@
+{'T10_budget': {'60': 4.4, '50': 10.0, '45': 10.0}, 'max_dev_compute_deg': 0.2506439107761551, 'max_dev_disc_deg': 1.1703685430939785, 'check_wc0': True, 'check_pm0': True, 'check_compute_vs_total': True, 'check_disc_vs_pred': True}
