@@ -1,0 +1,102 @@
+{
+ "plant": "1/((0.1 s+1)(0.02 s+1))",
+ "target": 1.0,
+ "main": {
+  "ideal": {
+   "Kc": 2.0,
+   "Ti": 0.1,
+   "Td": 0.02,
+   "y_at_0.6s": 1.0005,
+   "overshoot_pct": 1.57,
+   "settling_2pct_s": 0.1755
+  },
+  "parallel": {
+   "Kp": 2.0,
+   "Ki": 20.0,
+   "Kd": 0.04,
+   "y_at_0.6s": 1.0005,
+   "overshoot_pct": 1.57,
+   "settling_2pct_s": 0.1755
+  }
+ },
+ "max_diff": {
+  "tf_parallel_vs_tf_ideal": 8.881784197001252e-16,
+  "ode_parallel_vs_ode_ideal": 5.329070518200751e-15,
+  "tf_vs_ode_parallel": 1.2202461263655096e-11,
+  "tf_vs_ode_ideal": 1.219957468379107e-11,
+  "ideal_numbers_into_parallel_vs_converted": 0.34555892130984
+ },
+ "poles": {
+  "parallel": [
+   -56.6308,
+   [
+    -11.6846,
+    -6.3287
+   ],
+   [
+    -11.6846,
+    6.3287
+   ]
+  ],
+  "max_abs_diff": 2.842170943040401e-14,
+  "stable": true
+ },
+ "max_diff_vs_scipy_step": 2.7045032879868813e-13,
+ "sweep": {
+  "ideal_to_parallel": {
+   "sets": 1000,
+   "stable_sets": 1000,
+   "max_step_diff": 5.773159728050814e-15,
+   "max_round_trip_rel_err": 1.9985290915975292e-16
+  },
+  "parallel_to_ideal": {
+   "sets": 1000,
+   "stable_sets": 930,
+   "max_step_diff": 2.4646951146678475e-14,
+   "max_round_trip_rel_err": 1.9888547950625007e-16
+  }
+ },
+ "sweep_ranges": {
+  "rng_seed": 52,
+  "sampling": "log-uniform",
+  "sets_per_direction": 1000,
+  "ideal": {
+   "Kc": [
+    0.5,
+    20
+   ],
+   "Ti": [
+    0.05,
+    2
+   ],
+   "Td": [
+    0.005,
+    0.1
+   ]
+  },
+  "parallel": {
+   "Kp": [
+    0.5,
+    20
+   ],
+   "Ki": [
+    1,
+    500
+   ],
+   "Kd": [
+    0.005,
+    1
+   ]
+  }
+ },
+ "sweep_ode": {
+  "ideal_to_parallel": {
+   "sets": 100,
+   "max_step_diff": 4.693569977121115e-10
+  },
+  "parallel_to_ideal": {
+   "sets": 100,
+   "max_step_diff": 1.1308619596306357e-09
+  }
+ }
+}
