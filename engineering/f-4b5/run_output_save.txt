@@ -1,0 +1,60 @@
+{
+ "wc0": 24.02499089002692,
+ "pm0": 72.82245471454691,
+ "criterion_60": {
+  "pm_B_by_T": {
+   "5": 62.50348347645408,
+   "10": 52.19122349956126,
+   "20": 31.569133232171794
+  },
+  "T10_A_max_tc_ms": 4.4,
+  "T10_A_monotonic_decreasing": true,
+  "B_max_T_ms": 6.2,
+  "B_monotonic_decreasing_in_T": true,
+  "by_T": {
+   "5": {
+    "pm_B": 62.50348347645408,
+    "A_max_tc_ms": 5.0,
+    "A_all_tc": true
+   },
+   "10": {
+    "pm_B": 52.19122349956126,
+    "A_max_tc_ms": 4.4,
+    "A_all_tc": false
+   },
+   "20": {
+    "pm_B": 31.569133232171794,
+    "A_max_tc_ms": null,
+    "A_all_tc": false
+   }
+  },
+  "formula_budget_ms": 9.315052562605254,
+  "formula_T10_A_max_tc_ms": 4.3150525626052545,
+  "formula_B_max_T_ms": 6.210035041736837
+ },
+ "range": {
+  "T_ms": [
+   1,
+   20
+  ],
+  "tc_fractions": [
+   0,
+   0.25,
+   0.5,
+   0.75,
+   1.0
+  ],
+  "max_diff_formula_deg": 1.1277726003052742,
+  "max_disc_total_deg": 1.1703685430939856,
+  "max_pm_formula_A_deg": 1.1703685430939785,
+  "max_pm_formula_B_deg": 0.042595942788700825
+ },
+ "max_abs_diff_disc_explicit": 7.119291619286993e-15,
+ "max_err_plant_solve_ivp": 3.175237850427948e-14,
+ "check_delay_schedule": true,
+ "check_disc_explicit": true,
+ "check_plant_solve_ivp": true,
+ "check_pm_positive_T10": true,
+ "check_A_equals_B_at_tc_T": true
+}
+모든 check_* 통과: True
