@@ -1,0 +1,57 @@
+{
+ "plant": "1/((0.1 s+1)(0.02 s+1))",
+ "target": 1.0,
+ "cases": {
+  "right": {
+   "Kp": 2.0,
+   "Ki": 20.0,
+   "Kd": 0.04,
+   "y_at_0.6s": 1.0005,
+   "overshoot_pct": 1.57,
+   "settling_2pct_s": 0.1755,
+   "max_diff_vs_scipy_step": 2.7045032879868813e-13,
+   "stable": true,
+   "slowest_pole": -11.6846
+  },
+  "ideal_into_parallel": {
+   "Kp": 2.0,
+   "Ki": 0.1,
+   "Kd": 0.02,
+   "y_at_0.6s": 0.6736,
+   "overshoot_pct": 0.0,
+   "settling_2pct_s": 84.2442,
+   "max_diff_vs_scipy_step": 1.2789769243681803e-13,
+   "stable": true,
+   "slowest_pole": -0.0334
+  },
+  "parallel_into_ideal": {
+   "Kp": 2.0,
+   "Ki": 0.1,
+   "Kd": 0.08,
+   "y_at_0.6s": 0.6731,
+   "overshoot_pct": 0.0,
+   "settling_2pct_s": 84.228,
+   "max_diff_vs_scipy_step": 1.1401990462900358e-13,
+   "stable": true,
+   "slowest_pole": -0.0334
+  },
+  "kd_only": {
+   "Kp": 2.0,
+   "Ki": 20.0,
+   "Kd": 0.02,
+   "y_at_0.6s": 1.0002,
+   "overshoot_pct": 1.18,
+   "settling_2pct_s": 0.1492,
+   "max_diff_vs_scipy_step": 4.2676973066591017e-13,
+   "stable": true,
+   "slowest_pole": -13.8197
+  }
+ },
+ "p_only_final_value": 0.6667,
+ "round_trip_ideal": [
+  2.0,
+  0.1,
+  0.02
+ ],
+ "ki_ratio_right_vs_wrong": 200.0
+}
