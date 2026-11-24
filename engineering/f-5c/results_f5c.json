@@ -1,0 +1,97 @@
+{
+ "params": {
+  "Kp": 2.0,
+  "Ki": 6.0,
+  "tau_s": 0.5,
+  "K_plant": 1.0,
+  "Ts_s": 0.001,
+  "dr": 8.0,
+  "t_step_s": 0.1,
+  "umax": 10.0
+ },
+ "first_sample_output": 16.048,
+ "t_reach_ms": 804.7189562170502,
+ "A": 2.3905620875658995,
+ "needed_integ": 8.0,
+ "ki_min_formula": 4.1831166201510905,
+ "ki_min_code": 4.177066532200115,
+ "cases": {
+  "ideal": {
+   "overshoot": 0.3037822137866346,
+   "overshoot_pct": 3.7972776723329327,
+   "cross_ms": 604.0,
+   "over_limit_ms": 491.0,
+   "integ_max": 9.302633759512558,
+   "integ_at_cross": 9.302622927294125,
+   "settle_s": 1.335
+  },
+  "plain": {
+   "overshoot": 1.2701468873031256,
+   "overshoot_pct": 15.876836091289071,
+   "cross_ms": 805.0,
+   "over_limit_ms": 1270.0,
+   "integ_max": 14.367382950446961,
+   "integ_at_cross": 14.367376207291471,
+   "settle_s": 2.233
+  },
+  "stop": {
+   "overshoot": 0.052049273977681665,
+   "overshoot_pct": 0.6506159247210208,
+   "cross_ms": 1167.0,
+   "over_limit_ms": 179.0,
+   "integ_max": 8.223190095048043,
+   "integ_at_cross": 8.223188561464216,
+   "settle_s": 0.967
+  }
+ },
+ "ki_rows": [
+  {
+   "Ki": 4.0,
+   "formula": 9.562248350263598,
+   "ts_correction": 0.016,
+   "code_integ_at_cross": 9.579896323654992,
+   "overshoot_ideal": -7.841516482365307e-06,
+   "overshoot_plain": 0.3951006599387963,
+   "overshoot_stop": -0.0017977729559834899
+  },
+  {
+   "Ki": 5.0,
+   "formula": 11.952810437829498,
+   "ts_correction": 0.02,
+   "code_integ_at_cross": 11.972813506076228,
+   "overshoot_ideal": 0.1287419799614824,
+   "overshoot_plain": 0.9262822783912767,
+   "overshoot_stop": 0.002758573927716057
+  },
+  {
+   "Ki": 6.0,
+   "formula": 14.343372525395397,
+   "ts_correction": 0.024,
+   "code_integ_at_cross": 14.367376207291471,
+   "overshoot_ideal": 0.3037822137866346,
+   "overshoot_plain": 1.2701468873031256,
+   "overshoot_stop": 0.052049273977681665
+  },
+  {
+   "Ki": 8.0,
+   "formula": 19.124496700527196,
+   "ts_correction": 0.032,
+   "code_integ_at_cross": 19.15650160972195,
+   "overshoot_ideal": 0.6326361999283296,
+   "overshoot_plain": 1.5829237142915389,
+   "overshoot_stop": 0.1567952587289625
+  },
+  {
+   "Ki": 10.0,
+   "formula": 23.905620875658997,
+   "ts_correction": 0.04,
+   "code_integ_at_cross": 23.945627012152457,
+   "overshoot_ideal": 0.9165156206593164,
+   "overshoot_plain": 1.7073119639874133,
+   "overshoot_stop": 0.2127031753718267
+  }
+ ],
+ "excess_plain": 6.367376207291471,
+ "excess_formula": 6.343372525395397,
+ "after_cross_ms": 465.0
+}
